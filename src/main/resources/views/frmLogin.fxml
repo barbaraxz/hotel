@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="813.0" style="-fx-background-color: #87CEFA;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.barbara.erp.controller.FrmLoginController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="300.0" prefWidth="350.0" spacing="15.0" style="-fx-background-color: #4682B4;" StackPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label prefHeight="42.0" prefWidth="379.0" text="Seja bem vindo(a) ao" textFill="LIGHTBLUE">
+               <font>
+                  <Font name="System Bold Italic" size="38.0" />
+               </font>
+            </Label>
+            <Label layoutX="188.0" layoutY="48.0" prefHeight="20.0" prefWidth="275.0" text="HOTEL BABS" textFill="LIGHTBLUE">
+               <font>
+                  <Font name="System Bold Italic" size="45.0" />
+               </font>
+            </Label>
+            <FlowPane prefHeight="200.0" prefWidth="200.0" />
+            <Label layoutX="141.0" layoutY="177.0" text="Faça o seu login para continuar">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="10.0" prefWidth="774.0" spacing="20.0">
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <children>
+                  <Label text="Usuário:">
+                     <font>
+                        <Font name="System Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="campoUsuario" layoutX="260.0" layoutY="28.0" promptText="Digite seu usuário..." />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="30.0" layoutY="248.0" prefHeight="33.0" prefWidth="560.0" spacing="20.0">
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <children>
+                  <Label text="Senha:">
+                     <font>
+                        <Font name="System Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="campoSenha" promptText="Digite sua senha...." />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="30.0" layoutY="286.0" prefHeight="33.0" prefWidth="560.0" spacing="20.0">
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <children>
+                  <Button fx:id="btnEntrar" mnemonicParsing="false" onAction="#autenticar" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #B0C4DE;" text="ENTRAR">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

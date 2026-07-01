@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+   <children>
+      <Label layoutX="253.0" layoutY="14.0" text="HOTEL">
+         <font>
+            <Font name="Linux Libertine G Regular" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="50.0" text="Cadastre seu quarto aqui: ">
+         <font>
+            <Font name="Linux Libertine G Regular" size="19.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" layoutX="158.0" layoutY="100.0" prefHeight="199.0" prefWidth="282.0">
+         <children>
+            <Label contentDisplay="CENTER" text="Número do quarto:" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtQuarto" />
+            <Label contentDisplay="CENTER" text="Valor do quarto:" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtValor" />
+            <Label contentDisplay="CENTER" text="Tipo do quarto:" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbxTipo" prefWidth="150.0" />
+            <Label contentDisplay="CENTER" text="Status do quarto:" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbxStatus" layoutX="77.0" layoutY="126.0" prefWidth="150.0" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="69.0" layoutY="299.0" prefHeight="36.0" prefWidth="446.0">
+         <children>
+            <Button fx:id="btnAtualizar" mnemonicParsing="false" onAction="#atualizar" text="ATUALIZAR">
+               <font>
+                  <Font name="Linux Libertine G Display Regular" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSalvar1" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#salvar" text="SALVAR">
+               <font>
+                  <Font name="Linux Libertine G Display Regular" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnRemover" layoutX="194.0" layoutY="10.0" mnemonicParsing="false" onAction="#remover" text="REMOVER">
+               <font>
+                  <Font name="Linux Libertine G Display Regular" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
